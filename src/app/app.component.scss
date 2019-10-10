@@ -1,0 +1,32 @@
+.wrap{
+    height: 100vh;
+    background: transparent;
+    border: none;
+	.marco{
+	    border: 4px double #ff9e0066;
+	    margin: 0 5px;
+	    background: #769ccfa3;
+		.celda{
+			max-height: 20%;
+		}		
+	}
+	.wrap-sorteo{
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+    	overflow: hidden;
+	    background: transparent;
+	    border: none;
+		.bola-wrap{
+			border: none;
+			background: transparent;
+    		overflow: hidden;
+		    position: relative;
+		    height: 100%;
+		}
+	}
+	.footer-controls-wrap{
+		position: fixed;
+		bottom: 0;
+	}
+}

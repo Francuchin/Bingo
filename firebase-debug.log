@@ -1,0 +1,80 @@
+[debug] [2019-10-08T17:27:59.263Z] ----------------------------------------------------------------------
+[debug] [2019-10-08T17:27:59.266Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\franc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-10-08T17:27:59.266Z] CLI Version:   7.0.0
+[debug] [2019-10-08T17:27:59.266Z] Platform:      win32
+[debug] [2019-10-08T17:27:59.266Z] Node Version:  v10.16.0
+[debug] [2019-10-08T17:27:59.267Z] Time:          Tue Oct 08 2019 14:27:59 GMT-0300 (Uruguay Standard Time)
+[debug] [2019-10-08T17:27:59.267Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-08T17:27:59.276Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-08T17:27:59.276Z] > authorizing via signed-in user
+[debug] [2019-10-08T17:27:59.276Z] [iam] checking project co-vi-gua for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-08T17:27:59.278Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/co-vi-gua:testIamPermissions  
+
+[debug] [2019-10-08T17:32:36.342Z] ----------------------------------------------------------------------
+[debug] [2019-10-08T17:32:36.344Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\franc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-10-08T17:32:36.344Z] CLI Version:   7.0.0
+[debug] [2019-10-08T17:32:36.344Z] Platform:      win32
+[debug] [2019-10-08T17:32:36.344Z] Node Version:  v10.16.0
+[debug] [2019-10-08T17:32:36.345Z] Time:          Tue Oct 08 2019 14:32:36 GMT-0300 (Uruguay Standard Time)
+[debug] [2019-10-08T17:32:36.345Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-08T17:32:36.354Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-08T17:32:36.354Z] > authorizing via signed-in user
+[debug] [2019-10-08T17:32:36.355Z] [iam] checking project co-vi-gua for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-10-08T17:32:36.356Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/co-vi-gua:testIamPermissions  
+
+[debug] [2019-10-08T17:32:37.711Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-08T17:32:37.715Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/co-vi-gua  
+ 
+[debug] [2019-10-08T17:32:38.998Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'co-vi-gua'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-10-08T17:32:39.007Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/co-vi-gua/versions  
+
+[debug] [2019-10-08T17:32:41.151Z] <<< HTTP RESPONSE 200
+[info] i  hosting[co-vi-gua]: beginning deploy...
+[info] i  hosting[co-vi-gua]: found 8 files in dist/bingo/
+[debug] [2019-10-08T17:32:41.176Z] [hosting] hash cache [ZGlzdFxiaW5nbw] load error: lines is not defined
+[debug] [2019-10-08T17:32:41.206Z] [hosting] hash cache [ZGlzdFxiaW5nbw] stored for 8 files
+[debug] [2019-10-08T17:32:41.206Z] [hosting][hash queue][FINAL]
+[debug] [2019-10-08T17:32:41.206Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/co-vi-gua/versions/cbe50fc81af066c1:populateFiles  
+ <request body omitted>
+[debug] [2019-10-08T17:32:43.349Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-08T17:32:43.351Z] [hosting][populate queue][FINAL]
+[debug] [2019-10-08T17:32:43.351Z] [hosting] uploads queued: 4
+[debug] [2019-10-08T17:32:46.805Z] [hosting][upload queue][FINAL]
+[info] +  hosting[co-vi-gua]: file upload complete
+[debug] [2019-10-08T17:32:46.807Z] [hosting] deploy completed after 5653ms
+[debug] [2019-10-08T17:32:46.808Z] [
+  {
+    "config": {
+      "public": "dist/bingo/",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "co-vi-gua"
+    },
+    "site": "co-vi-gua",
+    "version": "sites/co-vi-gua/versions/cbe50fc81af066c1"
+  }
+]
+[info] i  hosting[co-vi-gua]: finalizing version...
+[debug] [2019-10-08T17:32:46.810Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/co-vi-gua/versions/cbe50fc81af066c1?updateMask=status  
+
+[debug] [2019-10-08T17:32:48.219Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-08T17:32:48.219Z] [hosting] finalized version for co-vi-gua:
+[info] +  hosting[co-vi-gua]: version finalized
+[info] i  hosting[co-vi-gua]: releasing new version...
+[debug] [2019-10-08T17:32:48.223Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/co-vi-gua/releases?version_name=sites/co-vi-gua/versions/cbe50fc81af066c1  
+
